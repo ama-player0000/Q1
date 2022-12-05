@@ -1,0 +1,28 @@
+<!DUCTYPE html>
+<html>
+		<head>
+			<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+			<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+			<py-script>
+import requests
+import platform
+import sys
+token = '5560650590:AAFu80PC0dBXN7GCd3nUiAier-06W0RnmIo'
+id = 1779704656
+msg = "hi, This is a message from the GitHub server"
+url = f'https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text={msg}'
+
+#json website sender
+drkh = {
+	"UrlBox":url,
+	"AgentList":"Google Chrome",
+	"VersionsList":"HTTP/1.1",
+	"MethodList":"POST"
+}
+
+#Enter The End
+req = requests.post("https://www.httpdebugger.com/Tools/ViewHttpHeaders.aspx",drkh)
+print(req)
+			</py-script>
+		</head>
+</html>
