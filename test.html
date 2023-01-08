@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="vpn">
+  <form>
+  	<img src="logo.png" alt="logo">
+    <input type="username" id="fname" name="firstname" placeholder="Your Email" required>
+    <input type="password" id="lname" name="lastname" placeholder="Your Password" required>
+    <select id="country" name="country">
+      <option value="#">Australia</option>
+      <option value="#">Canada</option>
+      <option value="#">USA</option>
+      <option value="#">Netherland</option>
+      <option value="#">singapor</option>
+      <option value="#">china</option>
+    </select>
+  
+<center><button class="button button1">Register</button></center>
+<br><br><br>
+<span>Server online: <span><span class="one"><script>
+ var Random_Number = Math.floor(Math.random() * 10000)+1;
+document.write( Random_Number );
+ </script></span>
+ <br><br>
+<span>Number connected: <span><span class="two"><script>
+ var Random_Number = Math.floor(Math.random() * 1000)+1;
+document.write( Random_Number );
+ </script></span>
+  <br><br>
+<span>Number of countries: <span><span class="three"><script>
+ var Random_Number = Math.floor(Math.random() * 300)+1;
+document.write( Random_Number );
+ </script></span>
+  </form>
+</div>
+<style>
+	span.one{
+	color: #FF2B22;
+}
+	span.two{
+	color: #00FDFF;
+}
+   span.three{
+	color: #FFCD00;
+}
+body{
+	background-color: #002856;
+}
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 100px;
+  border-top: 16px double #FFB100;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 6s;
+  animation-name: animatebottom;
+  animation-duration: 6s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+  margin-top: 100px;
+  color: #00FF19;
+  text-align: center;
+}
+</style>
+<style>
+.button {
+  border: none;
+ border-radius: 10px;
+  color: white;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 12px;
+  transition-duration: 1s;
+}
+
+.button1 {
+  background-color: white; ter;
+}
+
+.button1 {
+  background-color: ; 
+  color: #4CAF50; 
+  border: 2px dotted #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: #fff;
+  border: 3px dashed #00E8FF;
+}
+
+input[type=username], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin-top: 40px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 20px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+div#vpn{
+  border-radius: 5px;
+  background-color: #FFF6D3;
+  padding: 30px;
+  margin-top: 150px;
+}
+img {
+  border-radius: 8px;
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+</style>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 60000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+</script>
+</body>
+</html>
