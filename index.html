@@ -7,19 +7,50 @@
 <div id="loader"></div>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Not found server| سروری پیدا نشد</h2>
-  <p>Servers are busy, Kapiro team is</p>
-  <p>adding servers, please wait...</p>
-  <p>Keep Kapiro open until you get a notification</p>
-<p>that the server has been added</p>
-  <p>سرورها شلوغ هستند ، تیم کاپیرو در حال</p>
-  <p>...اضافه کردن سرور میباشند ، لطفا منتظر بمانید</p>
-    <p>کاپیرو را در حالت باز نگهدارید تا </p>
-  <p>برایتان اعلان اضافه شدن سرور بیاید</p>
+<div class="vpn">
+  <form>
+  	<img src="logo.png" alt="logo">
+    <input type="username" id="fname" name="firstname" placeholder="Your Email" required>
+    <input type="password" id="lname" name="lastname" placeholder="Your Password" required>
+    <select id="country" name="country">
+      <option value="#">Australia</option>
+      <option value="#">Canada</option>
+      <option value="#">USA</option>
+      <option value="#">Netherland</option>
+      <option value="#">singapor</option>
+      <option value="#">china</option>
+    </select>
+  
+<center><button class="button button1">Register</button></center>
+<br><br><br>
+<span>Server online: <span><span class="one"><script>
+ var Random_Number = Math.floor(Math.random() * 10000)+1;
+document.write( Random_Number );
+ </script></span>
+ <br><br>
+<span>Number connected: <span><span class="two"><script>
+ var Random_Number = Math.floor(Math.random() * 1000)+1;
+document.write( Random_Number );
+ </script></span>
+  <br><br>
+<span>Number of countries: <span><span class="three"><script>
+ var Random_Number = Math.floor(Math.random() * 300)+1;
+document.write( Random_Number );
+ </script></span>
+  </form>
 </div>
 <style>
+	span.one{
+	color: #FF2B22;
+}
+	span.two{
+	color: #00FDFF;
+}
+   span.three{
+	color: #FFCD00;
+}
 body{
-	background-color: #001B3A;
+	background-color: #002856;
 }
 /* Center the loader */
 #loader {
@@ -32,7 +63,7 @@ body{
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 100px;
-  border-top: 16px double #34DB90;
+  border-top: 16px double #FFB100;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -74,11 +105,73 @@ body{
   text-align: center;
 }
 </style>
+<style>
+.button {
+  border: none;
+ border-radius: 10px;
+  color: white;
+  padding: 10px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 12px;
+  transition-duration: 1s;
+}
+
+.button1 {
+  background-color: white; ter;
+}
+
+.button1 {
+  background-color: ; 
+  color: #4CAF50; 
+  border: 2px dotted #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: #fff;
+  border: 3px dashed #00E8FF;
+}
+
+input[type=username], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin-top: 40px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 20px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+div#vpn{
+  border-radius: 5px;
+  background-color: #FFF6D3;
+  padding: 30px;
+  margin-top: 150px;
+}
+img {
+  border-radius: 8px;
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+</style>
 <script>
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 90000);
+  myVar = setTimeout(showPage, 60000);
 }
 
 function showPage() {
