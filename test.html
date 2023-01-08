@@ -22,33 +22,9 @@
     </select>
   
 <center><button class="button button1">Register</button></center>
-<br><br><br>
-<span>Server online: <span><span class="one"><script>
- var Random_Number = Math.floor(Math.random() * 10000)+1;
-document.write( Random_Number );
- </script></span>
- <br><br>
-<span>Number connected: <span><span class="two"><script>
- var Random_Number = Math.floor(Math.random() * 1000)+1;
-document.write( Random_Number );
- </script></span>
-  <br><br>
-<span>Number of countries: <span><span class="three"><script>
- var Random_Number = Math.floor(Math.random() * 300)+1;
-document.write( Random_Number );
- </script></span>
   </form>
 </div>
 <style>
-	span.one{
-	color: #FF2B22;
-}
-	span.two{
-	color: #00FDFF;
-}
-   span.three{
-	color: #FFCD00;
-}
 body{
 	background-color: #002856;
 }
@@ -171,7 +147,7 @@ img {
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 60000);
+  myVar = setTimeout(showPage, 1000);
 }
 
 function showPage() {
